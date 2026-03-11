@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ff6bb5;
+  --color-background-light: #f8f5f7;
+  --color-background-dark: #230f19;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  --primary: #ff6bb5;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased font-display;
+}
+
+/* Custom Sparkle Effect */
+.sparkle-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkle-bg::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.1;
+  animation: sparkle 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes sparkle {
+  from { transform: translateY(0); }
+  to { transform: translateY(50px); }
+}
+
+.btn-prism {
+  @apply bg-primary text-white font-bold py-4 px-8 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300;
+}
+
+.glass-card {
+  @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border border-primary/10 rounded-3xl shadow-xl;
+}

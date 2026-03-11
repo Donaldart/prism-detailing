@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery - Prism Detailing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6bb5",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#230f19",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 px-4 md:px-10 lg:px-40 py-3">
+<div class="mx-auto flex max-w-[1200px] items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-50">Prism Detailing</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold text-primary" href="#">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                    Book Now
+                </button>
+</div>
+</header>
+<main class="flex-1">
+<!-- Hero Section -->
+<section class="px-4 md:px-10 lg:px-40 py-12 md:py-20">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">
+<span class="material-symbols-outlined text-sm">colors_spark</span>
+                                Portfolio Excellence
+                            </div>
+<h1 class="text-4xl md:text-6xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-slate-50">
+                                Witness the <br/><span class="text-primary">Transformation</span>
+</h1>
+<p class="max-w-[500px] text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+                                Experience the pinnacle of mobile car detailing. Our precision and passion bring out a showroom shine you have to see to believe. From grimy interiors to mirror-finish exteriors.
+                            </p>
+<div class="flex gap-4">
+<button class="rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-xl shadow-primary/25">
+                                    Start Your Project
+                                </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 rounded-3xl bg-primary/20 blur-2xl group-hover:bg-primary/30 transition-all"></div>
+<div class="relative aspect-video w-full overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 shadow-2xl">
+<img alt="Showroom Finish" class="h-full w-full object-cover" data-alt="Close up of a luxury car being detailed with foam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdpagREG47rLYOIQHV506FdCEdcBWxIR7SZsfjzqo9UfDFD3OvSv64YfYc3HEriVrsbmAangb3yFGdeTlGzko8ix28et7rVGXp-zslJXMzkaE3CWsWpcKYiOjnJjvNZri-wb3tnJ4sYcYI95mwiwqYvlpi6ohHAtRJ3_cywxUjPhMAICynGSniHkmGs1i54XfmIfpi1bylRAe9yXBw8gVmFTSS8fzlZl3fVAbeo6s9aOCaDzbv5l0boki7HDRWZ0yxpAZb5-igfbcw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">verified</span>
+                                        Real Client Results
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filterable Gallery -->
+<section class="px-4 md:px-10 lg:px-40 py-12 bg-white/50 dark:bg-background-dark/50">
+<div class="mx-auto max-w-[1200px]">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<h2 class="text-3xl font-bold tracking-tight mb-2">Recent Transformations</h2>
+<p class="text-slate-500">Browse our latest work across different service categories.</p>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="rounded-full bg-primary px-5 py-2 text-sm font-bold text-white">All Projects</button>
+<button class="rounded-full bg-primary/10 px-5 py-2 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-primary/20 transition-colors">Interior Shine</button>
+<button class="rounded-full bg-primary/10 px-5 py-2 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-primary/20 transition-colors">Exterior Gloss</button>
+<button class="rounded-full bg-primary/10 px-5 py-2 text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-primary/20 transition-colors">Ceramic Protection</button>
+</div>
+</div>
+<!-- Comparison Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project Card 1 -->
+<div class="flex flex-col gap-4 group">
+<div class="relative overflow-hidden rounded-xl shadow-lg">
+<div class="grid grid-cols-2 gap-0.5 bg-white dark:bg-slate-800">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Before Interior" class="h-full w-full object-cover grayscale-[0.5]" data-alt="Dirty car interior with crumbs and stains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_hPQ49GsBTmK-boJ4BnJeCqmj64ncoJvgAEWziGuE9e49lCuNPoHAr3SI_OskYkpKWrzgSGfymYFranJyNiUdUO00wnLJyKtnSRaz54AYIoORBhhYNcScufGlQt8n3Ao1ts6Q4yXzrDCbhDWWb3SWyUVab34f7bjrRWFmDgxzt-umiP9LkzGvFLITGauVNrs8Ggda_CPOTNKVN_v_CuqVDz0kk-hOiFRTpnmllR3_D42dWXw2ZasyCUgpFfM15bz6dLvPqylccU2H"/>
+<div class="absolute top-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Before</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="After Interior" class="h-full w-full object-cover" data-alt="Pristine clean leather car interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDULjS5tSNsaXsJhwWhLHzPqRTfchTOMaamJTD78ZkUm5j6eNK5y8Q7mrWgtfU6lEQLD9WINdOGj6PH2PoHh4bi2spobCsv4DFyVA0I7MAbitjT986r0ZjgUi5723ubNeZa5cxNAW4kk9V7CL02Y7BfCYP1302MhVeGA2BVh4euwEaETTpJSUnwqtHu8KAExjNdMbnEARHmA9pFJD13P-yVV9j9Ua0rYWLiDCNNZDIe6m_SqEcvklnToQLwAxcgV4uO9odb9UkBxFWB"/>
+<div class="absolute top-4 right-4 rounded-lg bg-primary px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">After</div>
+</div>
+</div>
+<div class="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-primary/30 transition-all rounded-xl"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Luxe Interior Restoration</h3>
+<p class="text-sm font-medium text-primary">Interior Shine Package</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="flex flex-col gap-4 group">
+<div class="relative overflow-hidden rounded-xl shadow-lg">
+<div class="grid grid-cols-2 gap-0.5 bg-white dark:bg-slate-800">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Before Exterior" class="h-full w-full object-cover opacity-80" data-alt="Dull car paint with swirl marks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTBjY853N_tsLWgpHosW-6fVDvQaugmfuOLUY1YanFUSmBzzQ9kXWqOCpCSs--I_QSAig-O3Ar2PSMT6JRQqGTA8LFKDLwA99upo46Dyo7vCB_VATsSUDxyrNqsiSM_n9YzU5ynDj4QmlTxbMD8DB0sazyb1XUvn7UANhhwnvYf3gzSQt3JQsnXpdSbxf0HvyeDJhC8cobm40sW8j4pVw98owgIHA3cvNnw2Kf75q2usTVzw6eWAUqc0nenU9XRV-k2jiAwiKhkShj"/>
+<div class="absolute top-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Before</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="After Exterior" class="h-full w-full object-cover" data-alt="Polished car paint with mirror reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Hi7K0dxCo0CssyTPN-sZzmRXfn7iOEeXfQjidoPLr8_kan1dI7MN7Cb1Mw639bTRQlXnFJytDQCXq1j2ZNEGOQZz-x_wylBccoJ6xoh0PexboZfpsqUsEg6cL-gFKQU17NTK1WC4W6eI9WDlVCg3paBXY3irFETmvdQqo78cnaJEW63xQlZq4Cbaa-RglhCo9z6GECqsWD0dSKUQreduLEZmX8bxwtO5_bdhwTwwGU9NgeVAj3I8FnGHOS55PIVpSxrhY71xpsNQ"/>
+<div class="absolute top-4 right-4 rounded-lg bg-primary px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">After</div>
+</div>
+</div>
+<div class="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-primary/30 transition-all rounded-xl"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Midnight Pearl Correction</h3>
+<p class="text-sm font-medium text-primary">Ceramic Protection Package</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="flex flex-col gap-4 group">
+<div class="relative overflow-hidden rounded-xl shadow-lg">
+<div class="grid grid-cols-2 gap-0.5 bg-white dark:bg-slate-800">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Before SUV" class="h-full w-full object-cover brightness-75" data-alt="Muddy SUV wheels and trim" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAITWnxiUQ0BHm-CDa9DRh5dlul961bGTJNB0vyXOBQfhnV2-ndWNLC0XgpUcB5ERp-qH5HP6y1DGyrRNEy1E3NlENXxMX7L_FJB_TyLDYyhGpEPNmY9TY1bMt0CuB5W8njN55d6vDKNToyEinpbz4KpwzCf6-a1ILMYBTLL2lWBLQQSKoy4MSn0IbPdkGs98cOsa6Z1R-AD7Ni5z1ZcxT8r9LNyf8R3QtYQouW3SFB-7QDZmoxCDKc8EISfymyibMw8fglEQoJyPIL"/>
+<div class="absolute top-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Before</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="After SUV" class="h-full w-full object-cover" data-alt="Sparkling clean SUV in a driveway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1hck36m9qR_fuEArv7jVfmmKaIZgjN99G-D5VkxA0ObZzcOhg4RDyrFh_kK0Lxy1vcNuAvHZkrTyVZak6OU2NMuYfd9u6N71LuB_ZKLhrIepZhnydbItyT6RNiUKkCPfl1prht6DiW5PhMOn-iXg3hBMrO1OkRYJNafJy2b6mAHD-MkBJYNCnBxt7y1rkpgUWYfUyPaEnJ0sYGL9B8-6AhLFebXseA9BFHfb2cVPxLXFEVtpl0Kd2ygptAt2cYS76uSnGWmzvixtQ"/>
+<div class="absolute top-4 right-4 rounded-lg bg-primary px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">After</div>
+</div>
+</div>
+<div class="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-primary/30 transition-all rounded-xl"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Off-Road to Showroom</h3>
+<p class="text-sm font-medium text-primary">Full Detail Package</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="flex flex-col gap-4 group">
+<div class="relative overflow-hidden rounded-xl shadow-lg">
+<div class="grid grid-cols-2 gap-0.5 bg-white dark:bg-slate-800">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Before Headlights" class="h-full w-full object-cover grayscale" data-alt="Dirty headlight lens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiK_5YIwCJcZjp1rJhr6Z8DmWSX-51s_eOLoE2xMtMO4DicohMkv3syZLV9m4WaKiLBjQE8igmyxxqgeBAz8_kYvtI_HXWacSsy1QYseRgKtsmwyyBNZ8H28hfR5rvqBKpKeEmQ0pHIzamnbd-sew8zi6DEm2k5TX3NRAdJHjSeX29ygEqX8VrSHOkBaGfkwsiLb5lIZtHBMpJtHPesh9R4ljtod5wU9hGRS5YLQA3Mq13eUTiAFRdm-YsQFHchvLo5vCiUJG3k8cT"/>
+<div class="absolute top-4 left-4 rounded-lg bg-black/70 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Before</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="After Headlights" class="h-full w-full object-cover" data-alt="Crystal clear restored headlight lens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1CqtfqyFZ2z2EH0SgHUDYLZ0ce_fwA1KfX9hW76_qUiKhh82UAvyM-KzjR1TNO4HkWTxZIgcttYjTo4laKq9HkeTlQZmsNepd8kdJI4cr3BVI8jQzKM7urcP156tEewGRtrq9_iIRIJ1mWo4gjSZT7ELdmSLb6x_lingou7exfrXfQSO2xUizFfHV8VCNlDPgP6maj1PJlPHbrtKYR0sfudagDkB0vcMJ0slKBerVMyxj0b96KucERJ0uukmA6JqGQE6UWdDMvSoL"/>
+<div class="absolute top-4 right-4 rounded-lg bg-primary px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">After</div>
+</div>
+</div>
+<div class="absolute inset-0 pointer-events-none border-2 border-transparent group-hover:border-primary/30 transition-all rounded-xl"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-xl font-bold">Crystal Clarity Restoration</h3>
+<p class="text-sm font-medium text-primary">Exterior Gloss Package</p>
+</div>
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="flex items-center gap-2 rounded-xl border-2 border-primary px-8 py-3 font-bold text-primary hover:bg-primary hover:text-white transition-all">
+                            View All 48+ Projects
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="px-4 md:px-10 lg:px-40 py-24">
+<div class="mx-auto max-w-[1200px] rounded-[2rem] bg-slate-900 dark:bg-primary/10 p-8 md:p-16 text-center text-white relative overflow-hidden">
+<!-- Prism elements -->
+<div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-primary/20 blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-primary/30 blur-3xl"></div>
+<span class="material-symbols-outlined absolute top-10 right-10 text-primary/40 text-6xl rotate-12">auto_awesome</span>
+<span class="material-symbols-outlined absolute bottom-10 left-10 text-primary/40 text-4xl -rotate-12">colors_spark</span>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black mb-6">Ready to see your car's <span class="text-primary">Prism</span> shine?</h2>
+<p class="mx-auto max-w-[600px] text-slate-300 md:text-lg mb-10 leading-relaxed">
+                            Don't settle for "clean" when you can have a "transformation". Our mobile units are fully equipped and ready to come to your location.
+                        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="rounded-xl bg-primary px-10 py-5 text-lg font-bold shadow-2xl shadow-primary/40 hover:scale-105 transition-transform">
+                                Book Your Transformation
+                            </button>
+<button class="rounded-xl bg-white/10 px-10 py-5 text-lg font-bold backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all">
+                                Get a Quick Quote
+                            </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-primary/10 bg-white dark:bg-background-dark px-4 md:px-10 lg:px-40 py-16">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Prism Detailing</h2>
+</div>
+<p class="max-w-[320px] text-slate-500 mb-6">
+                            The gold standard in mobile automotive care. We bring showroom-quality detailing directly to your driveway.
+                        </p>
+<div class="flex gap-4">
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-xl">camera</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">Services</h4>
+<ul class="flex flex-col gap-3 text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Interior Shine</a></li>
+<li><a class="hover:text-primary" href="#">Exterior Gloss</a></li>
+<li><a class="hover:text-primary" href="#">Ceramic Protection</a></li>
+<li><a class="hover:text-primary" href="#">Full Transformation</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">Contact Us</h4>
+<ul class="flex flex-col gap-3 text-slate-600 dark:text-slate-400">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">phone</span> (555) 123-4567</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">mail</span> hello@prismdetailing.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">location_on</span> <span data-location="Los Angeles, CA">Los Angeles, CA</span></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+<p>© 2024 Prism Detailing Service. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

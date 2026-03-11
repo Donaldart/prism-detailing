@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6bb5",
+                        "background-light": "#f8f5f7",
+                        "background-dark": "#230f19",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Booking | Prism Detailing</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-10 py-3">
+<div class="mx-auto flex max-w-7xl items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Prism Detailing</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex gap-6 mr-6">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Reviews</a>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="mx-auto flex w-full max-w-7xl grow flex-col gap-8 px-4 py-8 md:flex-row md:px-10">
+<!-- Booking Flow Container -->
+<div class="flex-1 space-y-10">
+<!-- Step 1: Select Service -->
+<section id="step-1">
+<div class="mb-6 flex items-center gap-3">
+<span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">1</span>
+<h2 class="text-2xl font-bold">Select Service</h2>
+</div>
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+<!-- Service Card Active -->
+<div class="group relative cursor-pointer rounded-xl border-2 border-primary bg-white dark:bg-slate-900 p-5 shadow-sm transition-all">
+<div class="mb-3 flex justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<div class="rounded-full bg-primary p-1 text-white">
+<span class="material-symbols-outlined text-xs">check</span>
+</div>
+</div>
+<h3 class="text-lg font-bold">Full Detail</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Deep clean interior &amp; high-gloss exterior wax.</p>
+<p class="mt-4 font-bold text-primary">$180 - 240</p>
+</div>
+<!-- Service Card -->
+<div class="group relative cursor-pointer rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 transition-all hover:border-primary/50">
+<div class="mb-3 flex justify-between">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary text-3xl">vacuum</span>
+</div>
+<h3 class="text-lg font-bold">Interior Deep Clean</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Shampoo seats, steam clean, and odor removal.</p>
+<p class="mt-4 font-bold text-slate-900 dark:text-white">$120 - 160</p>
+</div>
+<!-- Service Card -->
+<div class="group relative cursor-pointer rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 transition-all hover:border-primary/50">
+<div class="mb-3 flex justify-between">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary text-3xl">water_drop</span>
+</div>
+<h3 class="text-lg font-bold">Exterior Shine</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Hand wash, clay bar, and sealant application.</p>
+<p class="mt-4 font-bold text-slate-900 dark:text-white">$90 - 130</p>
+</div>
+<!-- Service Card -->
+<div class="group relative cursor-pointer rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 transition-all hover:border-primary/50">
+<div class="mb-3 flex justify-between">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary text-3xl">diamond</span>
+</div>
+<h3 class="text-lg font-bold">Ceramic Coating</h3>
+<p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Multi-year paint protection &amp; extreme gloss.</p>
+<p class="mt-4 font-bold text-slate-900 dark:text-white">From $599</p>
+</div>
+</div>
+</section>
+<!-- Step 2: Date & Time -->
+<section id="step-2">
+<div class="mb-6 flex items-center gap-3">
+<span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 text-sm font-bold text-primary">2</span>
+<h2 class="text-2xl font-bold">Choose Date &amp; Time</h2>
+</div>
+<div class="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Simple Calendar Mock -->
+<div>
+<div class="flex items-center justify-between mb-4">
+<h4 class="font-bold">October 2023</h4>
+<div class="flex gap-2">
+<button class="p-1 rounded-md border border-slate-200 hover:bg-slate-50"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-1 rounded-md border border-slate-200 hover:bg-slate-50"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 text-center text-xs font-medium text-slate-400 mb-2">
+<div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
+</div>
+<div class="grid grid-cols-7 gap-1">
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">1</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">2</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">3</button>
+<button class="h-10 rounded-lg bg-primary text-white flex items-center justify-center text-sm font-bold">4</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">5</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">6</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">7</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">8</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">9</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">10</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">11</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">12</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">13</button>
+<button class="h-10 rounded-lg hover:bg-slate-100 flex items-center justify-center text-sm">14</button>
+</div>
+</div>
+<!-- Time Slots -->
+<div>
+<h4 class="font-bold mb-4">Available Times</h4>
+<div class="grid grid-cols-2 gap-2">
+<button class="rounded-lg border border-slate-200 py-2 px-3 text-sm hover:border-primary transition-colors text-center">8:00 AM</button>
+<button class="rounded-lg border-2 border-primary bg-primary/5 py-2 px-3 text-sm font-bold text-primary text-center">10:30 AM</button>
+<button class="rounded-lg border border-slate-200 py-2 px-3 text-sm hover:border-primary transition-colors text-center">1:00 PM</button>
+<button class="rounded-lg border border-slate-200 py-2 px-3 text-sm hover:border-primary transition-colors text-center">3:30 PM</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Step 3: Contact Info -->
+<section id="step-3">
+<div class="mb-6 flex items-center gap-3">
+<span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20 text-sm font-bold text-primary">3</span>
+<h2 class="text-2xl font-bold">Service Details</h2>
+</div>
+<div class="space-y-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Full Name</label>
+<input class="w-full rounded-lg border-slate-200 bg-slate-50 p-2.5 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Phone Number</label>
+<input class="w-full rounded-lg border-slate-200 bg-slate-50 p-2.5 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800" placeholder="(555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Email Address</label>
+<input class="w-full rounded-lg border-slate-200 bg-slate-50 p-2.5 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800" placeholder="john@example.com" type="email"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Service Address</label>
+<div class="relative">
+<input class="w-full rounded-lg border-slate-200 bg-slate-50 p-2.5 pr-10 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800" placeholder="123 Street Name, City, State" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-slate-400">location_on</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar Summary -->
+<aside class="w-full md:w-[380px]">
+<div class="sticky top-24 space-y-4">
+<div class="rounded-2xl border border-primary/20 bg-white dark:bg-slate-900 p-6 shadow-xl shadow-primary/5">
+<h3 class="text-xl font-bold mb-4">Order Summary</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4 border-b border-slate-100 dark:border-slate-800 pb-4">
+<div class="h-16 w-16 overflow-hidden rounded-lg bg-slate-100">
+<img class="h-full w-full object-cover" data-alt="Close up of shiny car detailing finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA1hR9qQ4RWMEBvXVMG7N4WZ8wJyysujPur29VldByQwcMe3qMxw1Ivm1F_vTmyLZS5wRalUi9In23nFBNOFoN3KkZjGFcTIS0Xzf6FIBygkwAB32ty0VjZINZ7R366m79hGINdvQmAGsr6f4p8nFWKSBHmNA4Fg7Atf830s-eHUrtg81sQk5cfRBmLHWtDurO1eLLsZv6c4JXFXUGv7VPXcYES9tB6GU5BhSeOQteHOEM0kpUASPczccFE3jFmjig-imsawdauaxc"/>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Full Detail Package</p>
+<p class="text-xs text-slate-500">Includes interior &amp; exterior</p>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Date</span>
+<span class="font-medium">Wed, Oct 4th</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Time</span>
+<span class="font-medium">10:30 AM</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-slate-500">Service Fee</span>
+<span class="font-medium">$180.00</span>
+</div>
+<div class="flex justify-between border-t border-slate-100 dark:border-slate-800 pt-3">
+<span class="font-bold">Total Estimated</span>
+<span class="text-xl font-bold text-primary">$180.00</span>
+</div>
+</div>
+<button class="w-full rounded-xl bg-primary py-4 text-center font-bold text-white shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02] active:scale-[0.98]">
+                                Book My Detail
+                            </button>
+<div class="flex items-center justify-center gap-2 text-xs text-slate-500">
+<span class="material-symbols-outlined text-sm text-green-500">verified_user</span>
+<span>Secure Booking Payment</span>
+</div>
+</div>
+</div>
+<!-- Trust Signals -->
+<div class="flex items-center justify-between rounded-xl bg-primary/5 p-4 border border-primary/10">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined fill-1 text-primary text-sm">star</span>
+<span class="font-bold text-sm">4.9/5</span>
+</div>
+<span class="text-[10px] uppercase tracking-wider font-bold text-slate-500">Google Rating</span>
+</div>
+<div class="h-8 w-px bg-primary/20"></div>
+<div class="text-right">
+<p class="text-xs font-bold">500+ Cars</p>
+<p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Detailed locally</p>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950 px-4 md:px-10 py-12">
+<div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-sm">auto_fix_high</span>
+</div>
+<span class="text-lg font-bold">Prism Detailing</span>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed">The ultimate mobile detailing experience brought right to your driveway. Professional, reliable, and spectacular results.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Company</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Service Area</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Join Our Team</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Services</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Interior Detail</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Exterior Shine</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ceramic Coating</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Paint Correction</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Support</h4>
+<div class="flex items-center gap-2 text-sm text-slate-500 mb-2">
+<span class="material-symbols-outlined text-sm text-primary">mail</span>
+                        hello@prismdetailing.com
+                    </div>
+<div class="flex items-center gap-2 text-sm text-slate-500">
+<span class="material-symbols-outlined text-sm text-primary">call</span>
+                        (555) 123-4567
+                    </div>
+<div class="mt-6 flex gap-4">
+<a class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base">share</span>
+</a>
+<a class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-base">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mx-auto max-w-7xl mt-12 pt-8 border-t border-slate-50 dark:border-slate-900 text-center">
+<p class="text-xs text-slate-400">© 2023 Prism Detailing Mobile Services. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>
