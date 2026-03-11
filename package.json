@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -21,13 +21,12 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-helmet-async": "^3.0.0",
-    "react-router-dom": "^7.13.1",
-    "vite": "^7.3.1"
+    "react-router-dom": "^7.13.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.1",
+    "vite": "^7.3.1"
   }
 }
